@@ -16,7 +16,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header {
@@ -47,6 +48,8 @@ body {
   margin-top: 24px;
   margin-bottom: 24px;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* щоб не було синього тексту */
 }
 
 .logo-text1 {
@@ -94,6 +97,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* щоб не було синього тексту */
+  display: block; /* зробити весь блок клікабельним */
 }
 
 .header-contacts {
@@ -116,6 +122,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
   cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* щоб не було синього тексту */
 }
 
 .main-page {
@@ -237,6 +245,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 .team-page-container {
   margin: auto;
@@ -257,6 +266,14 @@ body {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
   cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* щоб не було синього тексту */
+  display: block; /* зробити весь блок клікабельним */
+  transition: transform 0.2s ease;
+}
+
+.team-page-member:hover {
+  transform: translateY(-4px);
 }
 
 .team-page-member-img {
@@ -307,7 +324,7 @@ body {
   box-sizing: border-box;
 }
 
-.logo-white {
+.footer-logo-white {
   display: flex;
   flex-direction: row;
   gap: 0px;
@@ -315,9 +332,11 @@ body {
   height: 24px;
   cursor: pointer;
   margin-bottom: 16px;
+  text-decoration: none;
+  color: inherit; /* щоб не було синього тексту */
 }
 
-.logo-text3 {
+.footer-logo-text3 {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 18px;
@@ -329,7 +348,7 @@ body {
   color: var(--iris);
 }
 
-.logo-text4 {
+.footer-logo-text4 {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 18px;
