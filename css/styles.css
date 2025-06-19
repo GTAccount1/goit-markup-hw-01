@@ -259,13 +259,18 @@ body {
 
 .footer {
   background: var(--navy-blue);
-  padding: 100px 156px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 312px;
   color: var(--cloud);
 }
 
 .footer-container {
   max-width: 264px;
   font-family: var(--font-family);
+  margin-left: 156px;
+  margin-top: 50px;
 }
 
 .footer-text {
