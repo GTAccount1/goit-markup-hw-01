@@ -43,6 +43,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: inherit;
+  margin-right: 36px;
 }
 
 .logo-text {
@@ -87,10 +88,20 @@ body {
 
 .contacts {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
-.contacts-item {
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-link {
   text-decoration: none;
   color: var(--slate);
   font-weight: 400;
@@ -98,6 +109,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-family: var(--font-family);
+  display: block;
 }
 
 .main-page {
@@ -136,12 +148,16 @@ body {
   font-family: var(--font-family);
 }
 
-.advantages-page {
+.advantage-page {
   padding: 120px 156px;
   background: var(--white);
 }
 
-.advantages-list {
+.advantage-page-title {
+  display: none;
+}
+
+.advantage-list {
   display: flex;
   gap: 24px;
   list-style: none;
@@ -176,21 +192,29 @@ body {
   background: var(--cloud);
   padding: 120px;
   text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team-title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 72px;
+  margin: 0;
   font-family: var(--font-family);
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
 
-.team-container {
+.team-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .team-member {
@@ -198,15 +222,18 @@ body {
   text-decoration: none;
   color: inherit;
   width: 264px;
+  height: 380px;
   box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 1px 6px rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
   overflow: hidden;
   transition: transform 0.2s ease;
+  display: block;
 }
 
 .team-member:hover {
   transform: translateY(-4px);
+  background: var(--iris);
 }
 
 .team-img {
