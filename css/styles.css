@@ -57,18 +57,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-text-iris {
-  color: var(--iris);
-}
-
-.logo-text-navy {
-  color: var(--navy-blue);
-}
-
-.logo-text-white {
-  color: var(--cloud);
-}
-
 .menu-list {
   display: flex;
   gap: 40px;
